@@ -7,6 +7,7 @@ import { app, BrowserWindow } from 'electron'
 if (process.env.NODE_ENV !== 'development') {
   global.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\')
 }
+require('electron-debug')({ showDevTools: 'undocked' })
 
 let mainWindow
 const winURL = process.env.NODE_ENV === 'development'
@@ -18,9 +19,10 @@ function createWindow () {
    * Initial window options
    */
   mainWindow = new BrowserWindow({
-    height: 563,
+    height: 550,
     useContentSize: true,
-    width: 1000
+    width: 500,
+    resizable: false,
   })
 
   mainWindow.loadURL(winURL)
@@ -28,6 +30,8 @@ function createWindow () {
   mainWindow.on('closed', () => {
     mainWindow = null
   })
+
+  mainWindow.setMenu(null);
 }
 
 app.on('ready', createWindow)
