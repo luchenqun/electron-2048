@@ -53,6 +53,7 @@ npm run build
 #### 注意事项
 1. 使用Electron开发，不要使用cnpm install 安装，开发可能没什么问题，但是安装可能找不到对应的包。因为cnpm install为了加速安装，会生成一些链接，electron的打包软件没做对应的优化。
 2. 如果在页面引入jQuery，需要这样`<script>window.$ = window.jQuery = require('../public/lib/jquery/dist/jquery.js')</script>`。因为 nwjs/electron 环境里有 module jquery 的 loader 认为是通过 commonjs 挂载的 所以他不会自动挂到全局。
+3. npm 要安装electron，会非常慢，可以在安装之前在git bash里面执行一下`export ELECTRON_MIRROR="https://npm.taobao.org/mirrors/electron/"`。当然，有些东西如果install失败，那么可能需要借助比如Proxifier + ShadowSocks全局翻墙。呵呵哒！你懂的！
 
 #### 开发列表
 - [x] 完成基本游戏逻辑
