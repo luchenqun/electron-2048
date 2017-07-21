@@ -3,7 +3,7 @@
 > 一个使用Electron写的一个 2048 小游戏。
 
 #### 目的
-预热一下Electron开发技术，结合公司使用的Web前端开发框架Vue，Element-ui，Vue-router等，开发一个桌面应用。如果想以此为模板开发应用。使用命令`git checkout template`切换到template分支，以此为基础，开发你的基于Electron + Vue + Vue-router 的Web开发方式的桌面应用。
+预热一下Electron开发技术，结合公司使用的Web前端开发框架Vue，Element-ui，Vue-router等，开发一个桌面应用。如果想以此为模板开发应用。使用命令`git checkout template`切换到template分支，以此为基础，然后把代码拷贝出来放到你的Git目录，开发你的基于Electron + Vue + Vue-router 的Web开发方式的桌面应用。
 
 #### 构建步骤
 
@@ -23,30 +23,30 @@ npm run build
 ```
 ├── appveyor.yml           #
 ├── build                  # 编译的一些资源依赖
-│   └── icons              # 
-│       ├── 256x256.png    # Linux平台图标 
+│   └── icons              #
+│       ├── 256x256.png    # Linux平台图标
 │       ├── icon.icns      # Mac OS 平台图标
 │       └── icon.ico       # Windows 平台图标
-├── dist                   # 
+├── dist                   #
 │   ├── electron           # 使用webpack打包后的electron源代码
 │   └── web                # 使用webpack打包后的web源代码(暂时没提供命令)
 ├── package.json           # 描述包的文件
-├── package-lock.json      # 
+├── package-lock.json      #
 ├── README.md              # 项目藐视
 ├── src                    # 开发目录
 │   ├── index.ejs          # 页面入口
-│   ├── main               # 
+│   ├── main               #
 │   │   ├── index.dev.js   # Electron页面开发环境初始化
 │   │   └── index.js       # Electron页面环境初始化
 │   └── renderer           # Vue开发目录
-│       ├── App.vue        # 
-│       ├── assets         # 
-│       │   └── logo.png   # 
-│       ├── components     # 
-│       │   └── Game.vue   # 
-│       ├── main.js        # 
-│       └── router         # 
-│           └── index.js   # 
+│       ├── App.vue        #
+│       ├── assets         #
+│       │   └── logo.png   #
+│       ├── components     #
+│       │   └── Game.vue   #
+│       ├── main.js        #
+│       └── router         #
+│           └── index.js   #
 └── static                 # 资源路径
 ```
 
