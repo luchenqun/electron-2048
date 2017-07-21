@@ -1,6 +1,6 @@
 {
   "name": "electron-2048",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "luchenqun <luchenqun@juzix.io>",
   "description": "electron-2048",
   "license": null,
